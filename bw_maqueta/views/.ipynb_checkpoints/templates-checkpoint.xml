@@ -21,7 +21,7 @@
         </template>
 -->
         <function model="ir.model.fields" name="formbuilder_whitelist">
-            <value>project.task</value>
+            <value>crm.lead</value>
             <value eval="['bw_category']"/>
         </function>
     </data>
