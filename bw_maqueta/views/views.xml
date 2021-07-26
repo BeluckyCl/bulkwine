@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="bw_maqueta.list">
+      <field name="name">bw_maqueta list</field>
+      <field name="model">bw_maqueta.bw_maqueta</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="bw_maqueta.action_window">
+      <field name="name">bw_maqueta window</field>
+      <field name="res_model">bw_maqueta.bw_maqueta</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="bw_maqueta.action_server">
+      <field name="name">bw_maqueta server</field>
+      <field name="model_id" ref="model_bw_maqueta_bw_maqueta"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="bw_maqueta" id="bw_maqueta.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="bw_maqueta.menu_1" parent="bw_maqueta.menu_root"/>
+    <menuitem name="Menu 2" id="bw_maqueta.menu_2" parent="bw_maqueta.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="bw_maqueta.menu_1_list" parent="bw_maqueta.menu_1"
+              action="bw_maqueta.action_window"/>
+    <menuitem name="Server to list" id="bw_maqueta" parent="bw_maqueta.menu_2"
+              action="bw_maqueta.action_server"/>
+-->
+  </data>
+</odoo>
