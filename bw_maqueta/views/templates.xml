@@ -22,7 +22,7 @@
 -->
         <function model="ir.model.fields" name="formbuilder_whitelist">
             <value>project.task</value>
-            <value eval="['bw_category']">
+            <value eval="['bw_category']"/>
         </function>
     </data>
 </odoo>
